@@ -103,27 +103,27 @@
     {
       "group": "Data Apps",
       "pages": [
-        "report-app",
+        "data-apps/report-app",
         {
           "group": "Get started",
           "pages": [
-            "get-started",
-            "managing-app-updates",
-            "notebook-and-script"
+            "data-apps/get-started/get-started",
+            "data-apps/get-started/managing-app-updates",
+            "data-apps/get-started/notebook-and-script"
           ]
         },
-        "basic-blocks",
+        "data-apps/basic-blocks",
         {
           "group": "Chart blocks",
           "pages": [
-            "chart-blocks",
-            "connected-charts",
-            "altair-charts",
-            "matplotlib-charts",
-            "plotly-charts"
+            "data-apps/chart-blocks/chart-blocks",
+            "data-apps/chart-blocks/connected-charts",
+            "data-apps/chart-blocks/altair-charts",
+            "data-apps/chart-blocks/matplotlib-charts",
+            "data-apps/chart-blocks/plotly-charts"
           ]
         },
-        "marks"
+        "data-apps/marks"
       ]
     },
     {
@@ -132,28 +132,27 @@
         {
           "group": "Text",
           "pages": [
-            "text-1",
-            "stopwords",
-            "emotion-analysis",
-            "sentiment-analysis",
-            "huggingface",
-            "text-vectors",
-            "translation",
-            "tag-nouns"
+            "unstructured-data-analysis/text/text-1",
+            "unstructured-data-analysis/text/stopwords",
+            "unstructured-data-analysis/text/emotion-analysis",
+            "unstructured-data-analysis/text/sentiment-analysis",
+            "unstructured-data-analysis/text/huggingface",
+            "unstructured-data-analysis/text/text-vectors",
+            "unstructured-data-analysis/text/translation",
+            "unstructured-data-analysis/text/tag-nouns"
           ]
         },
         {
           "group": "Image",
           "pages": [
-            "image-emotion-analysis",
-            "image-emotion-analysis",
-            "color-analysis",
-            "image-vectors"
+            "unstructured-data-analysis/image/image-emotion-analysis",
+            "unstructured-data-analysis/image/color-analysis",
+            "unstructured-data-analysis/image/image-vectors"
           ]
         },
-        "audio",
-        "video",
-        "pdf-documents"
+        "unstructured-data-analysis/audio",
+        "unstructured-data-analysis/video",
+        "unstructured-data-analysis/pdf-documents"
       ]
     },
     {
@@ -162,39 +161,39 @@
         {
           "group": "Creating vectors",
           "pages": [
-            "creating-vectors",
-            "vectorize-text",
-            "vectorize-image",
-            "list-all-vector-fields",
-            "extracting-vectors-from-pretrained-pytorch-models"
+            "vector-embeddings/creating-vectors/creating-vectors",
+            "vector-embeddings/creating-vectors/vectorize-text",
+            "vector-embeddings/creating-vectors/vectorize-image",
+            "vector-embeddings/creating-vectors/list-all-vector-fields",
+            "vector-embeddings/creating-vectors/extracting-vectors-from-pretrained-pytorch-models"
           ]
         },
         {
           "group": "Clustering",
           "pages": [
-            "clustering",
-            "clustering-1",
-            "closest-to-centroids",
-            "cluster-aggregate",
-            "byo-clusters",
-            "fast-clustering",
-            "label-new-documents-with-clusters",
-            "view-cluster-labels-and-descriptions"
+            "vector-embeddings/clustering/clustering",
+            "vector-embeddings/clustering/clustering-1",
+            "vector-embeddings/clustering/closest-to-centroids",
+            "vector-embeddings/clustering/cluster-aggregate",
+            "vector-embeddings/clustering/byo-clusters",
+            "vector-embeddings/clustering/fast-clustering",
+            "vector-embeddings/clustering/label-new-documents-with-clusters",
+            "vector-embeddings/clustering/view-cluster-labels-and-descriptions"
           ]
         },
         {
           "group": "Vector similarity search",
           "pages": [
-            "search",
-            "vector-search",
-            "multi-vector-search",
-            "traditional-text-search",
-            "approximate-nearest-neighbors-search",
-            "vector-search-on-chunks"
+            "vector-embeddings/vector-similarity-search/search",
+            "vector-embeddings/vector-similarity-search/vector-search",
+            "vector-embeddings/vector-similarity-search/multi-vector-search",
+            "vector-embeddings/vector-similarity-search/traditional-text-search",
+            "vector-embeddings/vector-similarity-search/approximate-nearest-neighbors-search",
+            "vector-embeddings/vector-similarity-search/vector-search-on-chunks"
           ]
         },
-        "dimensionality-reduction",
-        "label"
+        "vector-embeddings/dimensionality-reduction",
+        "vector-embeddings/label"
       ]
     },
     {
@@ -203,19 +202,26 @@
         {
           "group": "What is vector search?",
           "pages": [
-            "what-is-vector-search",
-            "how-to-vector-search",
-            "applications-of-vectors"
+            "theory/what-is-vector-search/what-is-vector-search",
+            "theory/what-is-vector-search/how-to-vector-search",
+            "theory/what-is-vector-search/applications-of-vectors"
           ]
         },
-        "vectors-for-classification"
+        "theory/vectors-for-classification"
+      ]
+    },
+    {
+      "group": "Other",
+      "pages": [
+        "other/python-sdk-ref",
+        "other/data-privacy"
       ]
     },
     {
       "group": "Custom Transformations",
       "pages": [
-        "introduction-to-custom-transformations",
-        "getting-started"
+        "custom-transformations/introduction-to-custom-transformations",
+        "custom-transformations/getting-started"
       ]
     }
   ],
