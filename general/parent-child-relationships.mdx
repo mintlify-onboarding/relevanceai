@@ -6,11 +6,10 @@ With so much relevant data being extracted, it is important to be able to store 
 
 For example:
 
-### Storing Parent Child Relationships
+## Storing Parent Child Relationships
 
-Python
-
-`from relevanceai import Client 
+```python Python
+from relevanceai import Client 
 client = Client()
 ds = client.Dataset("sample")
 ds.update_field_children(
@@ -19,16 +18,13 @@ ds.update_field_children(
   category="sentiment",
   metadata={"model": "Social Media Model"}
 )
-
-`
+```
 
 If you are interested in the API documentation for parent-child relationships, you can find them here 
 
-### Listing Parent Child Relationships
+## Listing Parent Child Relationships
 
-Python
-
-`# Simple way to list all available field children!
+```python Python
+# Simple way to list all available field children!
 ds.list_field_children()
-
 `

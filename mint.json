@@ -40,15 +40,15 @@
     {
       "group": "Getting Started",
       "pages": [
-        "introduction",
-        "installation",
-        "authentication",
-        "terminology",
+        "getting-started/introduction",
+        "getting-started/installation",
+        "getting-started/authentication",
+        "getting-started/terminology",
         {
           "group": "Relevance as a vector platform",
           "pages": [
-            "vector-platform",
-            "experimentation-first"
+            "getting-started/vector-platform",
+            "getting-started/experimentation-first"
           ]
         }
       ]
@@ -59,45 +59,45 @@
         {
           "group": "Quickstart",
           "pages": [
-            "python-quickstart",
-            "text-quickstart"
+            "general/quickstart/python-quickstart",
+            "general/quickstart/text-quickstart"
           ]
         },
         {
           "group": "Creating a dataset",
           "pages": [
-            "creating-a-dataset",
-            "inserting-data",
-            "dataset-schema",
-            "inserting-files",
-            "delete-data",
-            "copy-dataset",
-            "list-datasets",
-            "chunks"
+            "general/creating-a-dataset/creating-a-dataset",
+            "general/creating-a-dataset/inserting-data",
+            "general/creating-a-dataset/dataset-schema",
+            "general/creating-a-dataset/inserting-files",
+            "general/creating-a-dataset/delete-data",
+            "general/creating-a-dataset/copy-dataset",
+            "general/creating-a-dataset/list-datasets",
+            "general/creating-a-dataset/chunks"
           ]
         },
-        "retrieving-data",
+        "general/retrieving-data",
         {
           "group": "Filters",
           "pages": [
-            "filters",
-            "advanced-filters",
-            "combine-filters",
-            "supported-filters",
-            "supported-text-filters"
+            "general/filters/filters",
+            "general/filters/advanced-filters",
+            "general/filters/combine-filters",
+            "general/filters/supported-filters",
+            "general/filters/supported-text-filters"
           ]
         },
-        "facets",
+        "general/facets",
         {
           "group": "Aggregations",
           "pages": [
-            "aggregations",
-            "groupby",
-            "metrics"
+            "general/aggregations/aggregations",
+            "general/aggregations/groupby",
+            "general/aggregations/metrics"
           ]
         },
-        "apply",
-        "parent-child-relationships"
+        "general/apply",
+        "general/parent-child-relationships"
       ]
     },
     {

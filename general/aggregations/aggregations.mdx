@@ -14,9 +14,8 @@ Each aggregation requires a `name`, `field` and `agg`.
 * `agg` is the type of aggregation you are going to perform.
 * `name` is an field to rename the output of the aggregation.
 
-Python
-
-`from relevanceai import Client
+```python Python
+from relevanceai import Client
 
 client = Client(token=YOUR_ACTIVATION_TOKEN)
 ds = client.Dataset("quickstart")
@@ -30,28 +29,25 @@ metrics = [
 ]
 
 results = ds.aggregate(metrics=metrics, groupby=groupby)
-`
+```
 
 Aggregation is pagination supported. You can control the `page_size` and `page`.
 
-Python
-
-`results = ds.aggregate(metrics=metrics, groupby=groupby, page_size=20, page=2)
-`
+```python Python
+results = ds.aggregate(metrics=metrics, groupby=groupby, page_size=20, page=2)
+```
 
 Aggregations can be sorted as well `desc` for descending order, `asc` for ascending order.
 
-Python
-
-`results = ds.aggregate(metrics=metrics, groupby=groupby, sort=[{"avg_price" : "desc"}])
-`
+```python Python
+results = ds.aggregate(metrics=metrics, groupby=groupby, sort=[{"avg_price" : "desc"}])
+```
 
 ## Combining filters with aggregations
 
 Aggregations can be used in conjunction with filters.
 
-Python
-
-`filters = ds['location'] == "New York" 
+```python Python
+filters = ds['location'] == "New York" 
 results = ds.aggregate(metrics=metrics, groupby=groupby, filters=filters)
-`
+```

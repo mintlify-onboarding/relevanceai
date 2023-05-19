@@ -7,9 +7,8 @@ description: "Guide on how to insert data into RelevanceAI"
 
 Your data should be in the form of a list of dictionaries, each dictionary representing one document.
 
-Python
-
-`from relevanceai import Client
+```python Python
+from relevanceai import Client
 
 client = Client(token=YOUR_ACTIVATION_TOKEN)
 
@@ -21,42 +20,40 @@ documents = [
 ds = client.Dataset("example")
 
 ds.insert_documents(documents)
-`
+```
 
 If you don't have a unique "\_id" for each document. Use `create_id=True`.
 
-Python
-
-`ds.insert_documents(documents, create_id=True)
-`
+```python Python 
+ds.insert_documents(documents, create_id=True)
+```
 
 With Relevance you don't have to specify the schema or field types of your data. It will automatically be detected, to see all the different field types and how to overwrite it on insert. Check out [Dataset schema](/docs/python-schema).
 
 To avoid overwrite, make `overwrite=False`.
 
-Python
-
-`ds.insert_documents(documents, overwrite=False)
-`
+```python Python 
+ds.insert_documents(documents, overwrite=False)
+```
 
 ## Update documents
 
 To only update specific documents, use `upsert_documents` as shown in the example below:
 
-Python
+```python Python 
+ds.upsert_documents(documents=[{"_id": "2", "text": "Fresh Green Apple"}])
+```
 
-`ds.upsert_documents(documents=[{"_id": "2", "text": "Fresh Green Apple"}])
-`
+<Warning>
+**When To Use Upsert Vs Insert**
 
-> ### 🚧
-> 
-> When To Use Upsert Vs Insert
-> 
-> `insert` replaces the entire document whereas `upsert` only changes the fields that are specified or newly added. It will not delete fields that are already in the dataset, nor insert new documents.
+`insert` replaces the entire document whereas `upsert` only changes the fields that are specified or newly added. It will not delete fields that are already in the dataset, nor insert new documents.
+</Warning>
+
+
 
 ## Inserting Pandas Dataframe
 
-Python
-
-`ds.insert_df(df)
-`
+```python Python 
+ds.insert_df(df)
+```

@@ -6,11 +6,10 @@ title: "Copying and cloning dataset"
 
 With Relevance you can send and recieve dataset from other users. This allows you to freely collaborate and share datasets between accounts.
 
-* `dest_project` and `dest_api_key` refer to your destination project and api\_key or where the copied version of dataset is going to be saved.
+- `dest_project` and `dest_api_key` refer to your destination project and api\_key or where the copied version of dataset is going to be saved.
 
-Python (SDK)
-
-`from relevanceai import Client
+```python Python (SDK) 
+from relevanceai import Client
 
 client = Client(token=YOUR_ACTIVATION_TOKEN)
 
@@ -26,16 +25,15 @@ client.send_dataset(
     dest_project,
     dest_api_key
 )
-`
+```
 
 ## Clone a dataset
 
 Cloning a dataset will create an exact copy of an existing dataset. Good for backing up data before transformations.
 
-Python (SDK)
-
-`copied_dataset_id = COPIED_DATASET_ID
+```python Python (SDK) 
+copied_dataset_id = COPIED_DATASET_ID
 client.clone_dataset(src_dataset_id, copied_dataset_id)
-`
+```
 
 Note: For enterpise we do hourly snapshots to help restore data as well.

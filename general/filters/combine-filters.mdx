@@ -9,12 +9,13 @@ It is possible to combine multiple filters. For instance, the sample code below 
 * a Lenovo flip cover
 * produced after January 2020
 * by either Lapguard or 4D brand.  
-![combined filters.png](/images/multiple-filters.png)  
-Filtering results when using multiple filters: categories, contains, and date.
 
-Python
+<Frame caption="Filtering results when using multiple filters: categories, contains, and date.">
+  <img src="/images/multiple-filters.png" />
+</Frame>
 
-`filters = [
+```python Python 
+filters = [
     {
         "field": "description",
         "filter_type" : "contains",
@@ -36,15 +37,14 @@ Python
 ]
 
 filtered_data = ds.get_documents(filters=filters)
-`
+```
 
 ## Using "Or" filters
 
 The `or` filter helps you filter for multiple conditions. Unlike other filters, the only values used here are `filter_type` and `condition_value`.
 
-Python
-
-`filters = [
+```python Python 
+filters = [
     {
         "filter_type" : "or",
         "condition_value": [
@@ -64,13 +64,12 @@ Python
     }
 ]
 filtered_data = ds.get_documents(filters=filters)
-`
+```
 
 ### (A or B) and (C or D)
 
-Python
-
-`filters = [
+```python Python 
+filters = [
     {
         "filter_type" : "or",
         "condition_value": [
@@ -107,13 +106,12 @@ Python
     },
 ]
 filtered_data = ds.get_documents(filters=filters)
-`
+```
 
 ### (A or B or C) and D
 
-Python
-
-`filters = [
+```python Python 
+filters = [
     {
         "filter_type" : "or",
         "condition_value": [
@@ -145,4 +143,4 @@ Python
     },
 ]
 filtered_data = ds.get_documents(filters=filters)
-`
+```
