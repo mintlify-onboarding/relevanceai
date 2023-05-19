@@ -16,7 +16,7 @@ title: "Dataset schema"
 | Chunkvector (Beta) | A vector or embedding for chunks. Must have the suffix (ends with) \_chunkvector\_, and can only be stored within chunks. It cannot exceed length of 2048, for length greater than 2048 you can break it up into smaller vectors.                                                      | `"text\_chunk\_.sentence\_chunkvector\_":\[0.12, 0.34, ...\]` |
 
 <Warning>
-**List/array field type**
+🚧 **List/array field type**
  
 List and arrays are not identified in our schema. For example: `"text_list":["Apple", "IPhone"]` is of field type `text`, `"past_prices": [1500, 1000]` is of field type `numeric`. Chunks are an alternative way to store data as an array, it is still in beta.
 </Warning>
