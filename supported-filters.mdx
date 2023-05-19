@@ -1,0 +1,114 @@
+---
+title: "Supported filters"
+---
+
+The supported general filters are: `exists`, `ids`, `numeric`, `date`
+
+## `exists`
+
+![exist.png](/images/exists.png) 
+
+Filtering documents which include the field "brand" in their information.
+
+This filter returns entries in a database if a certain field (as opposed to the field values in previously mentioned filter types) exists or doesn't exist in them.
+
+For instance, filtering out documents in which there is no field 'purchase-info'. 
+
+Python (SDK)
+
+`filters = [
+    {
+        "field": "brand",
+        "filter_type": "exists",
+        "condition": "==",
+        "condition_value": " "
+    }
+]
+
+filtered_data = ds.get_documents(filters=filters)
+`
+
+## `ids`
+
+![id.png](/images/id.png) 
+
+Filtering documents based on their id.
+
+This filter returns documents whose unique id exists in a given list. It may look similar to 'categories'. The main difference is the speed.
+
+Python
+
+`filters = [
+    {
+        "field": "_id",
+        "filter_type": "ids",
+        "condition": "==",
+        "condition_value": "7790e058cbe1b1e10e20cd22a1e53d36"
+    }
+]
+
+filtered_data = ds.get_documents(filters=filters)
+`
+
+## `numeric`
+
+![Numeric.png](/images/numeric.png) 
+
+Filtering documents with retail price higher than 5000.
+
+This filter is to perform the filtering operators on a numeric value. 
+
+For instance, returning the documents with a price larger than 1000 dollars.
+
+Python
+
+`filters = [
+    {
+        "field": "retail_price",
+        "filter_type": "numeric",
+        "condition": ">",
+        "condition_value": "5000"
+    }
+]
+filtered_data = ds.get_documents(filters=filters)
+`
+
+## `date`
+
+![date.png](/images/date.png) 
+
+Filtering documents which were added to the database after January 2021.
+
+This filter performs date analysis and filters documents based on their date information. 
+
+For instance, it is possible to filter out any documents with a production date before January 2021.
+
+Python
+
+`filters = [
+    {
+        "field": "insert_date_",
+        "filter_type": "date",
+        "condition": "==",
+        "condition_value": "2020-07-13"
+    }
+]
+
+filtered_data = ds.get_documents(filters=filters)
+`
+
+Note that the default format is "yyyy-mm-dd" but can be changed to "yyyy-dd-mm" through the `format` parameter as shown in the example below.
+
+Python
+
+`filters = [
+    {
+        "field": "insert_date_",
+        "filter_type": "date",
+        "condition": "==",
+        "condition_value": "2020-13-07",
+        "format": ""yyyy-dd-MM""
+    }
+]
+filtered_data = ds.get_documents(filters=filters)
+`

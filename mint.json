@@ -40,20 +40,188 @@
   ],
   "navigation": [
     {
-      "group": "Home",
-      "pages": ["introduction", "features"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Getting Started",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "introduction",
+        "installation",
+        "authentication",
+        "terminology",
+        {
+          "group": "Relevance as a vector platform",
+          "pages": [
+            "vector-platform",
+            "experimentation-first"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "General",
+      "pages": [
+        {
+          "group": "Quickstart",
+          "pages": [
+            "python-quickstart",
+            "text-quickstart"
+          ]
+        },
+        {
+          "group": "Creating a dataset",
+          "pages": [
+            "creating-a-dataset",
+            "inserting-data",
+            "dataset-schema",
+            "inserting-files",
+            "delete-data",
+            "copy-dataset",
+            "list-datasets",
+            "chunks"
+          ]
+        },
+        "retrieving-data",
+        {
+          "group": "Filters",
+          "pages": [
+            "filters",
+            "advanced-filters",
+            "combine-filters",
+            "supported-filters",
+            "supported-text-filters"
+          ]
+        },
+        "facets",
+        {
+          "group": "Aggregations",
+          "pages": [
+            "aggregations",
+            "groupby",
+            "metrics"
+          ]
+        },
+        "apply",
+        "parent-child-relationships"
+      ]
+    },
+    {
+      "group": "Data Apps",
+      "pages": [
+        "report-app",
+        {
+          "group": "Get started",
+          "pages": [
+            "get-started",
+            "managing-app-updates",
+            "notebook-and-script"
+          ]
+        },
+        "basic-blocks",
+        {
+          "group": "Chart blocks",
+          "pages": [
+            "chart-blocks",
+            "connected-charts",
+            "altair-charts",
+            "matplotlib-charts",
+            "plotly-charts"
+          ]
+        },
+        "marks"
+      ]
+    },
+    {
+      "group": "Unstructured Data Analysis",
+      "pages": [
+        {
+          "group": "Text",
+          "pages": [
+            "text-1",
+            "stopwords",
+            "emotion-analysis",
+            "sentiment-analysis",
+            "huggingface",
+            "text-vectors",
+            "translation",
+            "tag-nouns"
+          ]
+        },
+        {
+          "group": "Image",
+          "pages": [
+            "image-emotion-analysis",
+            "image-emotion-analysis",
+            "color-analysis",
+            "image-vectors"
+          ]
+        },
+        "audio",
+        "video",
+        "pdf-documents"
+      ]
+    },
+    {
+      "group": "Vector Embeddings",
+      "pages": [
+        {
+          "group": "Creating vectors",
+          "pages": [
+            "creating-vectors",
+            "vectorize-text",
+            "vectorize-image",
+            "list-all-vector-fields",
+            "extracting-vectors-from-pretrained-pytorch-models"
+          ]
+        },
+        {
+          "group": "Clustering",
+          "pages": [
+            "clustering",
+            "clustering-1",
+            "closest-to-centroids",
+            "cluster-aggregate",
+            "byo-clusters",
+            "fast-clustering",
+            "label-new-documents-with-clusters",
+            "view-cluster-labels-and-descriptions"
+          ]
+        },
+        {
+          "group": "Vector similarity search",
+          "pages": [
+            "search",
+            "vector-search",
+            "multi-vector-search",
+            "traditional-text-search",
+            "approximate-nearest-neighbors-search",
+            "vector-search-on-chunks"
+          ]
+        },
+        "dimensionality-reduction",
+        "label"
+      ]
+    },
+    {
+      "group": "Theory and Concepts",
+      "pages": [
+        {
+          "group": "What is vector search?",
+          "pages": [
+            "what-is-vector-search",
+            "how-to-vector-search",
+            "applications-of-vectors"
+          ]
+        },
+        "vectors-for-classification"
+      ]
+    },
+    {
+      "group": "Other",
+      "pages": []
+    },
+    {
+      "group": "Custom Transformations",
+      "pages": [
+        "introduction-to-custom-transformations",
+        "getting-started"
       ]
     }
   ],
